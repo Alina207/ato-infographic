@@ -15,7 +15,7 @@ Animated infographic resource CSS
 }
  @keyframes moveGray {
 	0% {
-	left: 100%
+	left: 100%;
 	}
 	10%, 100% {
 	left: -200%;
@@ -266,7 +266,7 @@ p {
 	box-sizing: border-box;
 }
 .shadow {
-	webkit-box-shadow: 3px 3px 1px rgba(0,0,0,0.08);
+	-webkit-box-shadow: 3px 3px 1px rgba(0,0,0,0.08);
 	-moz-box-shadow: 3px 3px 1px rgba(0,0,0,0.08);
 	box-shadow: 3px 3px 1px rgba(0,0,0,0.08);
 }
@@ -411,8 +411,8 @@ p {
 	-webkit-transition: padding-top .5s, padding-bottom .5s, height .5s;
 	transition: padding-top .5s, padding-bottom .5s, height .5s;
 	padding: 1em 1.5em .688em;
-	padding: 1em 1.5em .688em;
 }
+
 .btn-orange, .btn-orange:visited {
 	background-color: #f46c00!important;
 	border-color: #f46c00;
@@ -471,20 +471,7 @@ p {
 	margin-top: 7px;
 	height: 20px;
 }
-.share-container {
-	position: relative;
-	margin-left: 10px;
-	padding-top: 10px;
-}
-.share-container img {
-	display: inline;
-	float: left;
-	height: 25px;
-	width: auto;
-}
-.share-container p {
-	display: inline;
-}
+
 /*stats*/
 .circle-container, .stat-container {
 	text-align: center;
