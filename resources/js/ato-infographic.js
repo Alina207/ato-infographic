@@ -104,21 +104,12 @@ window.onload = function onLoad() {
 			// Section 3 - The ROI of ATO
 			//////////////////////////////////
 
-			// Initiate bar stats
-			var stat5 = new CountUp("stat-5", 0, 20, 0, 2, options);
-			var stat6 = new CountUp("stat-6", 0, 46, 0, 2, options);
-			var stat7 = new CountUp("stat-7", 0, 70, 0, 2, options);
-
 			//Animate barchart
 			var barWaypoint = new Waypoint({
 				element: document.getElementById('bar-waypoint'),
 				handler: function () {
 					$('.bar').addClass('animate');
 					$('.bar p').addClass('fade-in');
-					/*Bar stats*/
-					stat5.start();
-					stat6.start();
-					stat7.start();
 				},
 				offset: 'bottom-in-view'
 			});

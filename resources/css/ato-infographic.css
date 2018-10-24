@@ -5,14 +5,6 @@ Author: TransUnion 2018
 Animated infographic resource CSS
 */
 /*start css animations - some names and animations are carried over from RPC but used/shared with Millennials */
- @keyframes moveYellow {
-	0% {
-	left: 100%;
-	}
-	10%, 100% {
-	left: -200%;
-	}
-}
  @keyframes moveGray {
 	0% {
 	left: 100%;
@@ -256,147 +248,7 @@ body {
 p {
 	font-size: .875em;
 }
-.img-left {
-	margin-left: -5%;
-}
-.btn, .main-eyebrow, .main-title, .section .section-subtitle, .section .section-title {
-	text-transform: uppercase;
-}
-.bar, .circle-container {
-	box-sizing: border-box;
-}
-.shadow {
-	-webkit-box-shadow: 3px 3px 1px rgba(0,0,0,0.08);
-	-moz-box-shadow: 3px 3px 1px rgba(0,0,0,0.08);
-	box-shadow: 3px 3px 1px rgba(0,0,0,0.08);
-}
-.full-width {
-	width: auto;
-}
-.main-callout {
-	color: #FCD800;
-	font-weight: 600;
-	font-size: 1.125em;
-}
-.secondary-title {
-	color: #FCD800;
-	font-size: 1.25em;
-}
-.highlight span {
-	background-color: #fcd800;
-}
-.nowrap {
-	white-space: nowrap;
-}
-.scroll-arrow {
-	display: inline-block;
-	font-size: 75px;
-	margin-top: 0;
-}
-.scroll-arrow:hover {
-	animation: bounce 2s 0s infinite;
-}
-.scroll-text {
-	color: #707070;
-}
-.circle-thumbnail {
-	height: 100px;
-	width: 100px;
-	float: right;
-}
-.hide {
-	display: none;
-}
-.share-container, .underline>span {
-	display: inline-block;
-}
-.no-padding {
-	padding: 0;
-}
-.blue-text, .scroll-arrow {
-	color: #00A6CA;
-}
-.landing-header {
-	margin-top: .25em;
-}
-.landing-details {
-	margin-top: 5%;
-}
-.landing-buttonContainer {
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-.landing-buttonContainer .landing-button {
-	position: relative;
-	background-color: #fff;
-	color: #000;
-	font-family: Intro, "Trebuchet MS", Helvetica, Arial, sans-serif;
-	display: inline-block;
-	text-transform: uppercase;
-	margin: 0 auto 20px;
-	padding: 10px 20px 15px;
-	font-weight: 600;
-}
-.landing-buttonContainer .landing-button>span {
-	position: absolute;
-	color: #00A6CA;
-	font-size: 1.625em;
-	left: 40%;
-	bottom: -10px;
-	z-index: 2;
-}
-.landing-buttonContainer .fa.landing-button:after {
-	content: "";
-	height: 20px;
-	width: 20px;
-	background-color: #fff;
-	border-radius: 3px;
-	display: inline-block;
-	margin: 0;
-	position: absolute;
-	bottom: -8px;
-	left: 40%;
-	transform: rotate(45deg);
-}
-.underline {
-	margin-top: 30px;
-	position: relative;
-}
-.underline>span>span {
-	z-index: 1;
-	position: relative;
-}
-.underline>span>span:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 74%;
-	height: 5px;
-	width: 100%;
-	z-index: -1;
-}
-.underline>span>span.underline-white:after {
-	background: #fff;
-	white-space: nowrap;
-	height: 3px;
-}
-.underline>span>span.underline-yellow:after {
-	background: #fcd800;
-	height: 3px;
-}
-.bar:after, .quote-copy.pro-tip:before {
-	background-size: contain;
-	z-index: 3;
-	content: "";
-}
-.bar:after, .quote-copy.pro-tip:before, .section {
-	background-repeat: no-repeat;
-}
-.navbar-fixed-top .navbar p, .quote-copy {
-	font-size: 1em;
-}
+
 /*button styles*/
 .btn {
 	height: 3.25em;
@@ -413,18 +265,6 @@ p {
 	padding: 1em 1.5em .688em;
 }
 
-.btn-orange, .btn-orange:visited {
-	background-color: #f46c00!important;
-	border-color: #f46c00;
-	color: #fff;
-	padding: 5px;
-}
-.btn-orange:active, .btn-orange:hover {
-	background-color: #BC5300!important;
-	border-color: #BC5300;
-	color: #fff;
-	padding: 5px;
-}
 .btn-yellow, .btn-yellow:visited {
 	background-color: #FCD800!important;
 	border-color: #FCD800;
@@ -437,135 +277,19 @@ p {
 	color: #000;
 	padding: 5px;
 }
-.btn-shadow {
-	-webkit-box-shadow: 4px 5px 1px rgba(50, 50, 50, .2);
-	-moz-box-shadow: 4px 5px 1px rgba(50, 50, 50, .2);
-	box-shadow: 4px 5px 1px rgba(50, 50, 50, .2);
-}
-/*nav / CTA / Share*/
-.navbar-fixed-top {
-	background-color: rgba(0, 81, 108, .9);
-	color: #fff;
-	height: 75px;
-	padding: 10px;
-	text-align: left;
-	margin-top: -75px;
-	transition: all .25s ease-in;
-}
-.navbar-fixed-top.displayed {
-	margin-top: 0;
-}
-.navbar-fixed-top .navbar .btn {
-	float: right;
-	clear: both;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-.navbar-nav>li a.btn-nav {
-	font-size: 17px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-.cta-logo {
-	margin-top: 7px;
-	height: 20px;
-}
 
-/*stats*/
-.circle-container, .stat-container {
-	text-align: center;
-}
-.stat {
-	display: inline-block;
-	margin-top: 20px;
-}
-.stat .stat-percentage {
-	float: right;
-}
-.stat--white {
-	color: #fff;
-}
-.stat--black {
-	color: #000;
-}
-.stat--yellow {
-	color: #FCD800;
-}
-.stat--green {
-	color: #A9D161;
-}
-.stat--blue {
-	color: #00A6CA;
-}
-.stat--darkBlue {
-	color: #006685;
-	text-align: right;
-}
-.stat--red {
-	color: #c52828;
-}
-.stat--orange {
-	color: #FF8142;
-}
-.stat--sm {
-	font-size: 2.85em;
-}
-.stat--md {
-	font-size: 3.125em;
-}
-.stat--lg {
-	font-size: 3.5em;
-}
-.stat-row {
-	margin-left: 5%;
-}
 /*sections*/
 
 .section {
 	position: relative;
 	overflow-x: hidden;
+	
 }
 .section>.row {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.section .section-title {
-	color: #494949;
-	font-size: 1.625em;
-}
-.section .section-subtitle {
-	font-size: 1.125em;
-}
-.section-title.section-title--blue {
-	color: #00A6CA;
-}
-.section-title.section-title--white {
-	color: #fff;
-}
 
-.section-title.section-title--green {
-	color: #A9D161;
-}
-.section-subtitle.section-subtitle--blue {
-	color: #00A6CA;
-}
-.section-subtitle.section-subtitle--dark {
-	color: #006685;
-}
-.section-subtitle .section-subtitle--light {
-	color: #00A6CA;
-	font-family: Intro, "Trebuchet MS", Helvetica, Arial, sans-serif;
-}
-.section-landing {
-	background-image: url(../img/frame1-background.png);
-	background-size: cover;
-	padding: 20px;
-	min-height: 550px;
-}
-.section img {
-	bottom: 0;
-}
 .circle-container .circle-label, .main-eyebrow, .main-subtitle, .main-title, .secondary-title, .section .section-subtitle, .section .section-title, .stat {
 	font-family: Intro, "Trebuchet MS", Helvetica, Arial, sans-serif;
 	font-weight: 700;
@@ -596,13 +320,15 @@ p {
 
 .section-intro {
 	background-image: url(../img//sections/intro/ATO-Infographic-1-header.jpg);
+	min-height: 500px!important;
+	background-size: cover;
 }
 
 /* 2 What is ATO Section*/
 
 .section-whatIsATO {
 	background-color: #FCD800; 
-	min-height: 400px;
+	min-height: 500px;
 	padding-right: 2em;
 }
 
@@ -613,12 +339,22 @@ p {
 
 .icon-stat {
 	color: #00A6CA;
+	padding-top: 1em;
 }
 
 .section-whatIsATO h2 {
 	color: #00A6CA;
-	padding-top: 1.5em;
+	padding-top: 1vh;
 	line-height: 2;
+	font-weight: bold;
+}
+
+.section-whatIsATO p {
+	line-height: 2;
+}
+
+.section-whatIsATO img {
+	width: 14em;
 }
 
 .icon-stat span {
@@ -633,7 +369,7 @@ p {
 }
 
 .section-whatIsATO .number-container {
-	width: 30%;
+	width: 100px;
     background: transparent;
     border: 8px solid #00a6ca;
     border-radius: 50%;
@@ -648,15 +384,18 @@ p {
     font-weight: bold;
 }
 
+
+
 /* 3 ROI of ATO section */
 .section-ROI {
-	background-color: #fff;
+	background-color: #eeeeee;
 	padding-bottom: 2em;
 	overflow: visible;
+	min-height: 500px;
 }
 .ROI-text {
 	margin-top: 1.5em;
-	margin-left: 3em;
+	padding-left: 3em;
 }
 
 .ROI-text h2 {
@@ -668,110 +407,139 @@ p {
 .ROI-text h3 {
 	text-transform: uppercase;
 	font-weight: bolder;
+	color: #000;
+}
+
+.progress-col {
+	padding: 0;
 }
 
 .ROI-text p {
 	line-height: 2;
 }
 
-.bar-container {
-	width: 90%;
-}
-.bar {
-	background-color: #494949;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	margin: 35px 0;
-	height: 30px;
-	padding: 5px 5px;
+.progress-wrapper {
+	width: 100%;
+  }
+  
+  .progress {
+	display: flex;
+	flex-direction: row-reverse;
+	box-shadow: none!important;
+	margin: 5% 0;
+	height: 35px;
+	overflow: visible;
 	position: relative;
-	width: 0;
-	font-size: .7em;
-	text-align: left;
-	line-height: 1em;
-	color: #fff;
-}
-.bar p, .bar-stat {
-	position: relative;
-}
-.bar:after {
-	position: absolute;
-	height: 45px;
-	width: 80px;
-	top: 10%;
-	right: -80px;
-}
-.bar p {
-	font-size: .75em;
-	opacity: 0;
-	margin-bottom: 0;
-	transition: opacity 4s;
-}
-.bar-stat {
-	display: inline;
-	top: 25%;
-}
-.bar--yellowCard {
-	background-color: #f16e00;
-}
-.bar--yellowCard.animate {
-	-webkit-transition: width .25s;
-	transition: width .5s;
-	width: 33%;
-}
-.bar--yellowCard:after {
-	background-image: url(../img/sections/roi-of-ato/hand-card-yellow-200x106-min.png);
-}
-.bar--blueCard {
-	background-color: #006685;
-}
-.bar--blueCard.animate {
-	-webkit-transition: width 1.5s;
-	transition: width 1s;
-	width: 66%;
-}
-.bar--blueCard:after {
-	background-image: url(../img/sections/roi-of-ato/hand-card-blue-200x106-min.png);
-}
-.bar--cash {
-	background-color: #00a6c9;
-}
-.bar--cash.animate {
-	-webkit-transition: width 1.75s;
-	transition: width 1.5s;
-	width: 80%
-}
-.bar--cash:after {
-	background-image: url(../img/sections/roi-of-ato/hand-cash-200x100-min.png);
-}
-.bar.animate p {
-	opacity: 1;
-}
+	background-color: transparent!important;
+  }
+  
+  .hand {
+	height: 130px;
+    width: auto;
+    position: relative;
+    top: -15px;
+  }
+
+  .first-arm {
+	  background-color: #494949;
+	  height: 29.9px;
+	  width: 50%;
+	  animation: firstArmMove 6s linear;
+  }
+
+  @keyframes firstArmMove {
+	0% {
+	  width: 100%;
+	}
+	15% {
+		width: 50%;
+	  }
+  }
+
+  .second-arm {
+	background-color:#00a6c9;
+	height: 85%;
+	width: 45%;
+	animation: secondArmMove 3.5s linear;
+  }
+
+  @keyframes secondArmMove {
+	0% {
+	  width: 100%;
+	}
+	25% {
+		width:100%;
+	}
+	50% {
+		width:45%;
+	}
+  }
+
+  .third-arm {
+	background-color: #026685;
+	height: 27.9px;
+	width: 40%;
+	animation: thirdArmMove 3s linear;
+  }
+
+  @keyframes thirdArmMove {
+	0% {
+	  width: 100%;
+	}
+	50% {
+		width: 100%;
+	  }
+	85% {
+		width: 40%;
+	  }
+  }
+
+  .third-hand {
+	top: -19px;
+  }
 
 
 /* 4 Impact section*/
 .section-impact {
 	background-image: url(../img/sections/impact/ATO-Infographic-4_back.png);
+	min-height: 500px;
+}
+
+.section-impact h2 {
+	font-weight: bold;
+	padding-top: 2.5em;
+}
+
+.section-impact img {
+	margin: 0 auto;
+}
+
+.section-impact .icon-row {
+	padding: 3em 2em;
 }
 
 /* 5 Mobile Payment Fraud section*/
-.section-mobile-fraud, .section-intro {
-	background-color: #00a6ca;
-}
 .section-mobile-fraud {
 	padding-top: 5%;
+	background-color: #00a6ca;
+	position: relative;
 }
-.section-mobile-fraud #methodology h2 {
-	font-family: Intro, sans-serif;
-	font-weight: 700;
+
+.section-mobile-fraud h2, h3 {
+	color: #fff;
 }
-.section-mobile-fraud #methodology {
-	margin-top: 10%;
-	color: #ffffff;
+
+.section-mobile-fraud h2 {
+	font-weight: bold;
+	position: relative;
+    bottom: 1em;
 }
-.section-mobile-fraud #methodology .copyright {
-	font-size: .7em;
+
+.section-mobile-fraud h3, p {
+	line-height: 1.5;
+	margin-bottom: 0;
 }
+
 .section-mobile-fraud #phone-cta {
 	font-family: Intro, sans-serif;
 	font-size: 1em;
@@ -784,22 +552,79 @@ p {
 	font-weight: 700;
 }
 
+.bottom-phone {
+	margin: 0 auto;
+}
+
+.mobile-fraud-copy {
+	padding-right: 1em;
+}
+
 /* 6 User Behavior Patterns section */
 
 .section-user-behavior {
 	background-color: #fff;
 	text-align: center;
+	min-height: 500px;
 }
+
+.section-user-behavior h2 {
+	padding-top: 2vh;
+}
+
+.user-behavior-arms {
+	position: relative;
+    top: 60px;
+}
+
+.user-behavior-arms .svg {
+	width: 150px;
+}
+
+.user-behavior-footer {
+	background-color: #FCD800;
+    padding: .5em 3em;
+}
+
+
 
 /* 7 Insight Guide section*/
 
 .section-insight-guide {
 	background-image: url(../img/sections/insight-guide/ATO-Infographic-6_1.jpg);
+	background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+	background-color: #00A6CA;
+	min-height: 500px;
 }
 
 .section-insight-guide h2 {
 	color: #fff;
 	font-weight: bold;
+	line-height: 1.5;
+}
+
+.section-insight-guide p {
+	line-height: 2;
+}
+
+.insight-guide-copy {
+	padding: 2em 3em;	
+}
+
+.insight-guide-copy button {
+	background-color: #FCD800;
+    border-color: #FCD800;
+	color: #000000;
+	margin: 1em 0;
+    padding: 6px 50px;
+    text-transform: uppercase;
+    line-height: normal;
+	border: none;
+	webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -808,188 +633,79 @@ p {
 .section-footer {
 	background-color: #026685;
 	color: #fff;
+	padding-bottom: 3em;
+}
+
+.section-footer  h2 {
+	font-weight: bold;
+	padding: 1em 0;
+}
+
+.section-footer ol {
+	list-style-type: lower-roman;
+}
+
+.section-footer ol li{
+	font-size: .8em;
+}
+
+.section-footer p {
+	padding-left: 1em;
 }
 
 
-/*//////////////// 780px ///////////////////*/
+/* MEDIA QUERIES */
 
-@media (min-width:768px) {
-	/*general*/	
-	.utilityFooterLinks ul#socialLinks {
-		float: right;
-	}
-	.full-width {
-		width: 110%;
-	}
+/*//////////////// 425px ///////////////////*/
+
+@media (max-width:425px) and (min-width: 0) {
+
+
+}
+
+/*//////////////// 768px ///////////////////*/
+
+@media (max-width:768px) {
+
 	body {
 		font-size: 20px;
 	}
-	.cta-logo {
-		height: 35px;
-	}
-	.callout {
-		margin-top: -25px;
-	}
-	.callout-digit {
-		width: 125px;
-	}
-	.callout-value {
-		font-size: 40px;
-	}
-	.percentage {
-		font-size: 45px;
-	}
-	.percentage-lg {
-		font-size: 110px;
-	}
-	.stat-copy {
-		margin-top: 30px;
-		margin-left: 12%;
-	}
-	/*sections*/
-	.section .img-container {
-		top: 100px;
-	}
-	.section-landing {
-		background-size: cover;
-		background-position: center top;
-		padding: 0 1em;
-		min-height: 700px;
-	}
-	.section-landing #carAnimation_container {
-		margin-top: 150px;
-	}
-	.section-landing .landing-header {
-		margin-top: 1.25em;
-	}
-	.section {
-		min-height: 500px !important;
-	}
-	.section .section-title {
-		margin-top: 1.875em;
-		z-index: 10;
-		position: relative;
-	}
-	.section .section-subtitle {
-		margin-top: 1.25em;
-	}
-	.landing-buttonContainer .landing-button>span {
-		left: 38%;
-	}
-	/*intro section */
-	.main-title {
-		text-shadow: 2px 0 2px #707070, 0 2px 2px #707070, 4px 2px 2px #707070, 2px 4px 2px #707070, 6px 4px 2px #707070, 4px 6px 2px #707070, 8px 6px 2px #707070, 6px 8px 2px #707070;
-	}
-	/*car ownership section */
 
-	.section-carOwnership .cloud {
+	/* Intro */
+
+	#intro-copy {
 		position: absolute;
-		top: 40px;
-		z-index: 2;
-		right: 20%;
+		top: 300px;
+		left: 30px;
 	}
-	.section-carOwnership .cloud.animate {
-		animation: moveCloud 400s infinite;
+
+	.section-intro h4 {
+		font-size: 1.5em;
 	}
-	.section-carOwnership .cloud img {
-		height: 100px;
+
+	/* the ROI of ATO */
+
+	.section-ROI {
+		padding-bottom: 4em;
 	}
-	.section-carOwnership .orange-car {
-		position: absolute;
-		bottom: 5px;
-		z-index: 3;
-		right: 30%;
+
+	/* The impact of ATO */
+
+	.section-impact {
+		min-height: 350px;
+		background-size: cover;
 	}
-	.section-carOwnership .orange-car.animate {
-		animation: moveCar 20s infinite;
+
+	.section-impact h2 {
+		padding-top: 1em;
 	}
-	.section-carOwnership .orange-car img {
-		height: 100px;
+
+	.section-impact .icon-row {
+		padding: 2em 1em;
 	}
-	.section-carOwnership .orange-car-road {
-		border-bottom: 10px solid #c6b14c;
-		background: #fcd800;
-		min-height: 20px;
-		bottom: 0px;
-		position: absolute;
-	}
-	.section-carOwnership .stat-copy {
-		margin-top: 30px;
-		font-size: 1em;
-		font-weight: 700;
-		margin-left: 0;
-	}
-	#carAnimation_container, #carCanvas {
-		height: 250px!important;
-		width: auto!important;
-	}
-	/* ROI of ATO section*/
-	.section-ROI .stat.stat--lg {
-		font-size: 5.75em;
-		margin-top: 0;
-	}
-	.section-ROI .stat-copy {
-		margin-top: 30px;
-	}
-	.section-ROI .bar {
-		/*padding: 15px 5px;*/
-		color: #fff;
-		text-align: center;
-		font-size: 1em;
-		border-top-right-radius: 5px;
-		border-bottom-right-radius: 5px;
-		margin: 65px 0;
-		height: 50px;
-		padding: 15px 5px;
-		position: relative;
-	}
-	.bar:after {
-		position: absolute;
-		height: 150px;
-		width: 190px;
-		top: -2px;
-		right: -190px;
-	}
-	.section-ROI .bar.bar--yellowCard {
-		text-align: left;
-	}
-	.section-ROI .bar.bar--cash:after {
-		top: -7px;
-	}
-	.section-ROI .bar.bar--yellowCard img.yellowCard-smoke {
-		position: absolute;
-		width: 100px;
-		height: 61px;
-		top: -1px;
-		right: -30px;
-		z-index: 1;
-	}
-	.section-ROI .bar.bar--yellowCard p {
-		right: 75px;
-	}
-	.section-ROI .bar p {
-		right: 70px;
-	}
-	.bar--blimp .bar-stat {
-		right: 22px;
-	}
-	.bar p {
-		font-size: .85em;
-	}
-	/*loyalty section */
-	.section-loyalty .content-row {
-		margin-left: 1.55em;
-	}
-	.section-loyalty .circle-row {
-		margin-top: 1em;
-	}
-	.circle-container {
-		padding: 10px;
-	}
+
 	/* Mobile Payment Fraud */	
-	.section-mobile-fraud {
-		min-height: 500;
-	}
+
 	.section-mobile-fraud #phone-cta {
 		font-family: Intro, sans-serif;
 		font-size: 1.2em;
@@ -1001,129 +717,89 @@ p {
 		left: 0;
 		font-weight: 700;
 	}
-	.section-mobile-fraud {
-		min-height: 600px;
+
+	.section-mobile-fraud h3, p {
+		font-size: .9em;
 	}
-	.section-mobile-fraud #methodology {
-		margin-top: -5%;
+
+	.mobile-fraud-copy {
+		padding-right: .9em;
 	}
+
+	/* What is ATO */
+
+	.section-whatIsATO {
+		padding-bottom: 1em;
+	}
+
+	.section-whatIsATO h2 {
+		line-height: 1.5;
+	}
+
+	.icon-stat p {
+		font-size: 1em;
+		padding: 1em 0;
+		line-height: 1.5;
+	}
+
+	.section-whatIsATO img {
+		width: 14em;
+	}
+
+	/* User Behavior */ 
+
+	.section-user-behavior {
+		min-height: 400px;
+	}
+
+	.user-behavior-arms .svg {
+		width: 120px;
+	}
+
+	
+
+	/* Insight guide */
+
+	.insight-guide-copy {
+		padding: 1em 3em;
+	}
+
+	/* Footer */
+
+	.section-footer {
+		padding-left: 2em;
+	}
+
 
 }
 
 /*//////////////// 992px ///////////////////*/
 
 @media (min-width:992px) {
-	/*general*/
 	body {
 		font-size: 22px;
 	}
-	.share-container img {
-		height: 35px;
-	}
-	/*CTA and nav*/	
-	.navbar-fixed-top {
-		text-align: left;
-	}
-	.landing-details, .landing-header {
-		margin-left: 2em;
-	}
-	.cta-logo, .shine {
-		position: absolute;
-	}
-	.cta-header {
-		text-align: center;
-		margin-top: 10px;
-	}
-	.cta-logo {
-		left: 5px;
-	}
-	/*general stats*/
-	.stat--md {
-		font-size: 4em;
-	}
-	.stat-copy {
-		font-size: 1.125em;
-		margin-top: 50px;
-		margin-left: 15%;
-		font-family: Intro, sans-serif;
-		font-weight: 700;
-	}
-	.stat-copy--blue {
-		color: #00A6CA;
-	}
-	.stat-copy--darkBlue {
-		color: #006685;
-	}
-	/*section styles*/
-	.section-title {
-		margin-left: 1.5em;
-	}
-	.section-subtitle {
-		margin-left: 2em;
-	}
-	.section-copy {
-		margin-left: 3.1em;
-	}
-	.section .img-container {
-		top: 0;
-	}
-	.section-landing .landing-buttonContainer .landing-button>span {
-		left: 37%;
-	}
-	/*intro section*/	
-	.main-title {
-		font-size: 6em;
-		text-shadow: 3px 0 3px #707070, 0 3px 3px #707070, 6px 3px 3px #707070, 3px 6px 3px #707070, 9px 6px 3px #707070, 6px 9px 3px #707070, 12px 9px 3px #707070, 9px 12px 3px #707070;
-		margin-left: -10px;
-		padding: 0;
-	}
-	/*car ownership section*/	
-	.section-landing #carAnimation_container {
-		height: 350px!important;
-		margin-top: 30%;
-	}
-	.section-landing #carCanvas {
-		height: 350px!important;
-		width: auto!important;
-	}
-	.section-carOwnership .stat-row {
-		margin-left: 1em;
-	}
-	.section-carOwnership .stat-copy {
-		margin-top: 50px;
-		font-size: 1em;
-		font-weight: 700;
-		margin-left: 10px;
-	}
-	/*ROI section*/	
-	.section-ROI .stat-row {
-		margin-left: 1.25em;
+	#intro-copy {
+		position: relative;
+		top: 3em;
 	}
 
+	#intro-copy h4:first-child {
+		margin-top: 2em;
+		position: relative;
+    	top: .5em;
+	}
 
-	/* User Behavior Patterns*/
-	.section-mobile-fraud #methodology {
-		margin-top: 10%;
+	#intro-copy h4 {
+		padding-left: 3em;
 	}
-	.section-mobile-fraud #phone-cta {
-		font-family: Intro, sans-serif;
-		font-size: 1.5em;
-		top: 20%;
-		z-index: 3;
-		position: absolute;
-		margin: 0 auto;
-		padding: 15%;
-		left: -10px;
-		font-weight: 700;
-	}
+
 }
 
 /*//////////////// 1200px ///////////////////*/
 
 @media (min-width:1200px) {
-	.fixed-header-container {
-		width: 1170px;
-	}
+
 	body, html {
 		height: 100%;
 		min-height: 100%;
