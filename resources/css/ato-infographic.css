@@ -245,9 +245,7 @@ body {
 	color: #000;
 	background: #FCD800;
 }
-p {
-	font-size: .875em;
-}
+
 
 /*button styles*/
 .btn {
@@ -294,6 +292,7 @@ p {
 	font-family: Intro, "Trebuchet MS", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 }
+
 /* 1 Intro section*/
 
 /*cheap and clunky way to override the ipad Pro height issue */
@@ -321,7 +320,8 @@ p {
 .section-intro {
 	background-image: url(../img//sections/intro/ATO-Infographic-1-header.jpg);
 	min-height: 500px!important;
-	background-size: cover;
+	padding-top: 7em;
+	background-position: 50%;
 }
 
 /* 2 What is ATO Section*/
@@ -340,6 +340,7 @@ p {
 .icon-stat {
 	color: #00A6CA;
 	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 .section-whatIsATO h2 {
@@ -354,18 +355,19 @@ p {
 }
 
 .section-whatIsATO img {
-	width: 14em;
+	width: 100%;
 }
 
 .icon-stat span {
 	display: inline-block;
 	padding-right: 6%;
+	font-size: 1.4em;
 }
 
 .icon-stat p {
 	display: inline-block;
 	vertical-align: bottom;
-	font-size: 1em;
+	font-size: 1.5em;
 }
 
 .section-whatIsATO .number-container {
@@ -553,7 +555,7 @@ p {
 }
 
 .bottom-phone {
-	margin: 0 auto;
+	width: 100%;
 }
 
 .mobile-fraud-copy {
@@ -565,7 +567,6 @@ p {
 .section-user-behavior {
 	background-color: #fff;
 	text-align: center;
-	min-height: 500px;
 }
 
 .section-user-behavior h2 {
@@ -656,16 +657,245 @@ p {
 
 /* MEDIA QUERIES */
 
-/*//////////////// 425px ///////////////////*/
+/*//////////////// 576px ///////////////////*/
 
-@media (max-width:425px) and (min-width: 0) {
+@media (max-width:576px) {
+	h2 {
+		font-size: 1.2em;
+	}
+
+	/* intro */
+	.section-intro {
+		min-height: 275px!important;
+		background-size: cover;
+		padding-top: 2em;
+		background-position: 70%;
+	}
+
+	.section-whatIsATO h2 {
+		padding-top: 0;
+		line-height: 1.5;
+	}
+
+	/* What is ATO */
+
+	.section-whatIsATO {
+		min-height: 375px;
+		padding-left: 2em;
+	}
+
+	.section-whatIsATO .number-container {
+		width: 50px;
+		border: 3px solid #00a6ca;
+	}
+	.section-whatIsATO .number {
+		font-size: 30px;
+	}
+
+	.icon-stat span {
+		font-size: 10px;
+	}
+
+	.icon-stat p {
+		font-size: .8em;
+		line-height: 1.5;
+		padding-top: .5em;
+	}
+
+	.section-whatIsATO img {
+		display: none;
+	}
+
+	/* The ROI of ATO */
+
+	.ROI-text h3 {
+		font-size: 1em;
+	}
+
+	.ROI-text {
+		margin-top: 0em;
+		padding-left: 2em;
+	}
+
+	/* Impact */
+
+	.section-impact {
+		min-height: 300px;
+		background-size: cover;
+	}
+
+	.section-impact h2 {
+		padding-top: 1em;
+	}
+
+	.section-impact .img-responsive {
+		padding-top: 1em;
+		width: 65%;
+	}
+
+	.section-impact .icon-row {
+		padding: 0em 2em;
+	}
+
+	/* Mobile */
+
+	.section-mobile-fraud h3, p {
+		line-height: 1.5;
+		margin-bottom: 0;
+		font-size: 1em;
+	}
+
+	.mobile-fraud-copy {
+		padding-right: 1em;
+		padding-left: 2em;
+	}
+
+	.bottom-phone {
+		padding: 0 5em;
+		margin-top: 2em;
+	}
+
+	/* User Behavior */
+
+	.section-user-behavior h2 {
+		padding-top: 0em;
+	}
+
+	.user-behavior-footer {
+		padding: .5em 1em;
+		font-size: 1em;
+	}
+
+	/* Insight guide */
+
+	.section-insight-guide {
+		background-image: url(../img/sections/insight-guide/ATO-Infographic-6_1.jpg);
+		background-size: contain;
+		min-height: 450px;
+	}
+
+	.insight-guide-copy {
+		padding: 0em 2em;
+	}
+
+
 
 
 }
 
 /*//////////////// 768px ///////////////////*/
 
-@media (max-width:768px) {
+@media (max-width:769px) and (min-width:577px) {
+	h2 {
+		font-size: 1.2em;
+	}
+
+	/* intro */
+
+	.section-intro {
+		padding-top: 4em;
+		background-repeat: no-repeat;
+		background-position: 50%;
+	}
+
+	/* What is ATO */
+
+	.section-whatIsATO {
+		min-height: 375px;
+		padding-left: 3em;
+	}
+
+	.section-whatIsATO .number-container {
+		width: 75px;
+		border: 6px solid #00a6ca;
+	}
+
+	.section-whatIsATO img {
+		display: none;
+	}
+
+	.section-whatIsATO .number {
+		font-size: 45px;
+	}
+
+	/* The ROI of ATO */
+
+	.ROI-text h3 {
+		font-size: 1em;
+	}
+
+	/* The Impact */
+
+	.section-impact {
+		min-height: 300px;
+		background-size: cover;
+	}
+
+	.section-impact h2 {
+		padding-top: 1.5em;
+	}
+
+	/* Mobile */
+
+	.section-mobile-fraud h3, p {
+		font-size: 1em;
+	}
+
+	.section-mobile-fraud {
+		padding-top: 0;
+	}
+
+	.mobile-fraud-copy {
+		padding: 2em 3em;
+	}
+
+	.bottom-phone {
+		width: 100%;
+		padding: 0 14em;
+	}
+
+	/* insight guide */
+	.insight-guide-copy button {
+		padding: 6px 15px;
+	}
+
+
+
+	/* User Behavior */
+	.section-user-behavior {
+		min-height: 375px;
+	}
+
+	.user-behavior-arms .svg {
+		width: 100px;
+	}
+
+	.section-user-behavior h2 {
+		padding-top: 1vh;
+	}
+
+	.user-behavior-footer {
+		padding: 1.5em 3em;
+	}
+
+	/*Insight guide */
+
+	.section-insight-guide {
+		min-height: 500px;
+	}
+
+	.insight-guide-copy {
+		padding: 1em 3em;
+	}
+
+	
+
+
+}
+
+/*//////////////// MAX 992px ///////////////////*/
+
+@media (min-width: 768px) and (max-width:992px) {
 
 	body {
 		font-size: 20px;
@@ -673,15 +903,7 @@ p {
 
 	/* Intro */
 
-	#intro-copy {
-		position: absolute;
-		top: 300px;
-		left: 30px;
-	}
 
-	.section-intro h4 {
-		font-size: 1.5em;
-	}
 
 	/* the ROI of ATO */
 
@@ -773,26 +995,14 @@ p {
 
 }
 
-/*//////////////// 992px ///////////////////*/
+
+/*//////////////// MIN 992px ///////////////////*/
 
 @media (min-width:992px) {
 	body {
 		font-size: 22px;
 	}
-	#intro-copy {
-		position: relative;
-		top: 3em;
-	}
 
-	#intro-copy h4:first-child {
-		margin-top: 2em;
-		position: relative;
-    	top: .5em;
-	}
-
-	#intro-copy h4 {
-		padding-left: 3em;
-	}
 
 }
 
