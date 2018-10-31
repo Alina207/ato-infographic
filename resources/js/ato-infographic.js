@@ -14,6 +14,7 @@ $(function () {
 	});
 });
 
+
 /*on window finish loading the animations can start based on scroll into and out of sections */
 
 window.onload = function onLoad() {
@@ -26,6 +27,24 @@ window.onload = function onLoad() {
 			  useGrouping: true,
 			suffix: '%'
 		};
+
+		var images = [
+			"./resources/img/sections/intro/ATO-Infographic-1-header.jpg",
+			"./resources/img/sections/intro/ATO-Infographic-1-header2.jpg",
+			"./resources/img/sections/intro/ATO-Infographic-1-header3.jpg"
+		  ]
+		  
+		  var imageHead = document.getElementById("intro-waypoint");
+		  var i = 0;
+		  
+		  setInterval(function() {
+				imageHead.style.backgroundImage = "url(" + images[i] + ")";
+				i++;
+				if (i == images.length) {
+					i =  0;
+				}
+		  }, 800);
+		
 
 			///////////////////////////////////////
 			// Section 1 - Intro

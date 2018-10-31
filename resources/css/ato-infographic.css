@@ -298,6 +298,8 @@ body {
 /*cheap and clunky way to override the ipad Pro height issue */
 #intro-waypoint {
 	overflow: hidden;
+	background-image: url(../img/sections/intro/ATO-Infographic-1-header.jpg);
+	background-position: 50%;
 }
 
 .section-intro h1 {
@@ -318,10 +320,10 @@ body {
 }
 
 .section-intro {
-	background-image: url(../img//sections/intro/ATO-Infographic-1-header.jpg);
+	
 	min-height: 500px!important;
 	padding-top: 7em;
-	background-position: 50%;
+	
 }
 
 /* 2 What is ATO Section*/
