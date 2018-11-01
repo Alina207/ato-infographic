@@ -1,150 +1,7 @@
 @charset "utf-8";
 
-/* CSS Document 
-Author: TransUnion 2018
-Animated infographic resource CSS
-*/
 /*start css animations - some names and animations are carried over from RPC but used/shared with Millennials */
- @keyframes moveGray {
-	0% {
-	left: 100%;
-	}
-	10%, 100% {
-	left: -200%;
-	}
-}
- @keyframes moveBG {
-	from {
-	transform: translateX(0);
-	}
-	to {
-	transform: translateX(-187%);
-	}
-}
- @keyframes moveCar {
-	0% {
-	right: 20%;
-	}
-	50% {
-	z-index:5;
-	}
-	90% {
-	right: -100%;
-	}
-	100% {
-	right: 20%;
-	z-index:-3;
-	}
-}
- @keyframes moveCloud {
-	0% {
-	right: 20%;
-	}
-	80% {
-	right: 100%;
-	}
-	85% {
-	z-index: -1;
-	right: -105%;
-	}
-	100% {
-	z-index: 2;
-	right: 20%;
-	}
-}
- @keyframes thingy {
-	0% {
-	transform: translateX(0);
-	width: 0;
-	opacity: 0;
-	}
-	10% {
-	width: 10%;
-	opacity: 1;
-	}
-	100%, 30% {
-	transform: translateX(-250px);
-	width: 0;
-	opacity: 0;
-	}
-}
- @keyframes dash {
-	to {
-	stroke-dashoffset: 800;
-	-moz-stroke-dashoffset: 800;
-	-webkit-stroke-dashoffset: 800;
-	}
-}
-
- @keyframes shine {
-	0% {
-	opacity: .1;
-	background-position: 50px top;
-	}
-	30% {
-	opacity: 1;
-	}
-	100%, 50% {
-	opacity: .2;
-	background-position: -500px 0;
-	}
-}
- @-moz-keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-	-moz-transform: translateY(0);
-	transform: translateY(0);
-	}
-	40% {
-	-moz-transform: translateY(-25px);
-	transform: translateY(-25px);
-	}
-	60% {
-	-moz-transform: translateY(-15px);
-	transform: translateY(-15px);
-	}
-}
- @-webkit-keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	}
-	40% {
-	-webkit-transform: translateY(-25px);
-	transform: translateY(-25px);
-	}
-	60% {
-	-webkit-transform: translateY(-15px);
-	transform: translateY(-15px);
-	}
-}
- @keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-	-moz-transform: translateY(0);
-	-ms-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	}
-	40% {
-	-moz-transform: translateY(-25px);
-	-ms-transform: translateY(-25px);
-	-webkit-transform: translateY(-25px);
-	transform: translateY(-25px);
-	}
-	60% {
-	-moz-transform: translateY(-15px);
-	-ms-transform: translateY(-15px);
-	-webkit-transform: translateY(-15px);
-	transform: translateY(-15px);
-	}
-}
-.bounce {
-	-moz-animation: bounce 2s 2;
-	-webkit-animation: bounce 2s 2;
-	animation: bounce 2s 2;
-}
-/*end css animations*/
-
-
+ 
 /*loader styles and animation*/
 #loader-wrapper {
 	position: fixed;
@@ -280,7 +137,7 @@ body {
 
 .section {
 	position: relative;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	
 }
 .section>.row {
@@ -308,6 +165,7 @@ body {
 	position: relative;
 	width: 400px;
 	margin: 0 auto;
+	background:#105065;
   }
   
   @keyframes noise-anim {
@@ -465,7 +323,6 @@ body {
 	clip: rect(0, 900px, 0, 0);
 	animation: noise-anim-2 3s infinite linear alternate-reverse;
   }
-
   
   .glitch, .text {
 	font-size: 100px;
@@ -2459,7 +2316,8 @@ body {
 	100% {
 	  clip: rect(50px, 9999px, 80px, 0);
 	}
-  }
+	}
+	
   .glitch:before, .glitch:after {
 	content: attr(text);
 	position: absolute;
@@ -2489,7 +2347,6 @@ body {
 	line-height: .9;
 	color: #fff;
 	margin: 0 auto;
-
 }
 
 .section-intro h4 {
@@ -2497,10 +2354,8 @@ body {
 }
 
 .section-intro {
-	
 	min-height: 500px!important;
-	padding-top: 7em;
-	
+	padding-top: 3em;
 }
 
 /* 2 What is ATO Section*/
@@ -2509,6 +2364,7 @@ body {
 	background-color: #FCD800; 
 	min-height: 500px;
 	padding-right: 2em;
+	overflow-x: hidden;
 }
 
 .tufa-line-chart:before, .tufa-graph:before {
@@ -2535,6 +2391,44 @@ body {
 
 .section-whatIsATO img {
 	width: 100%;
+}
+
+.swing {
+	-webkit-animation: swing 3.5s ease-in-out forwards infinite;
+	animation: swing 3.5s ease-in-out forwards infinite;
+	-webkit-transform-origin: 50% -10em;
+	transform-origin: 50% -10em;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(10deg);
+            transform: translateX(-50%) rotate(10deg);
+  }
+  50% {
+    -webkit-transform: translateX(-50%) rotate(-10deg) skewX(5deg) skewY(-2deg) scale(1.1);
+            transform: translateX(-50%) rotate(-10deg) skewX(5deg) skewY(-2deg) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(10deg);
+            transform: translateX(-50%) rotate(10deg);
+  }
+}
+@keyframes swing {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(10deg);
+            transform: translateX(-50%) rotate(10deg);
+  }
+  50% {
+    -webkit-transform: translateX(-50%) rotate(-10deg) skewX(5deg) skewY(-2deg) scale(1.1);
+            transform: translateX(-50%) rotate(-10deg) skewX(5deg) skewY(-2deg) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(10deg);
+            transform: translateX(-50%) rotate(10deg);
+  }
 }
 
 .icon-stat span {
@@ -2623,10 +2517,13 @@ body {
 
   .first-arm {
 	  background-color: #494949;
-	  height: 29.9px;
-	  width: 50%;
-	  animation: firstArmMove 6s linear;
-  }
+		height: 29.9px;
+	}
+	
+	.first-arm.animate {
+		animation: firstArmMove 6s linear;
+		width: 50%;
+	}
 
   @keyframes firstArmMove {
 	0% {
@@ -2638,11 +2535,14 @@ body {
   }
 
   .second-arm {
-	background-color:#00a6c9;
-	height: 85%;
-	width: 45%;
-	animation: secondArmMove 3.5s linear;
+		background-color:#00a6c9;
+		height: 85%;
   }
+
+	.second-arm.animate {
+		width: 45%;
+		animation: secondArmMove 3.5s linear;
+	}
 
   @keyframes secondArmMove {
 	0% {
@@ -2657,11 +2557,14 @@ body {
   }
 
   .third-arm {
-	background-color: #026685;
-	height: 27.9px;
-	width: 40%;
-	animation: thirdArmMove 3s linear;
-  }
+		background-color: #026685;
+		height: 27.9px;
+	}
+	
+	.third-arm.animate {
+		width: 40%;
+		animation: thirdArmMove 3s linear;
+	}
 
   @keyframes thirdArmMove {
 	0% {
@@ -2710,6 +2613,7 @@ body {
 	padding-top: 5%;
 	background-color: #00a6ca;
 	position: relative;
+	overflow-x: visible;
 }
 
 .section-mobile-fraud h2, h3 {
@@ -2741,6 +2645,19 @@ body {
 
 .left-phone {
 	width: 100%;
+	transform: translateY(0);
+	animation: none;
+	opacity: 0;
+}
+
+.come-in {
+  transform: translateY(800px);
+	animation: come-in 0.8s ease forwards;
+	opacity: 1;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
 }
 
 .bottom-phone {
@@ -2751,6 +2668,7 @@ body {
 .mobile-fraud-copy {
 	padding-right: 1em;
 }
+
 
 /* 6 User Behavior Patterns section */
 
@@ -2777,6 +2695,25 @@ body {
     padding: .5em 3em;
 }
 
+.device-one {
+	animation-delay: 2s;
+}
+
+.device-two {
+	animation-delay: 3s;
+}
+
+.device-three {
+	animation-delay: 4s;
+}
+
+.device-four {
+	animation-delay: 5s;
+}
+
+.device-five {
+	animation-delay: 6s;
+}
 
 
 /* 7 Insight Guide section*/
@@ -2788,6 +2725,7 @@ body {
     background-repeat: no-repeat;
 	background-color: #00A6CA;
 	min-height: 500px;
+	display: none;
 }
 
 .section-insight-guide h2 {
@@ -2880,6 +2818,7 @@ body {
 	.icon-stat p {
 		font-size: 1em!important;
 	}
+
 }
 
 /*//////////////// 576px ///////////////////*/
@@ -2905,6 +2844,10 @@ body {
 	.section-intro h1 {
 		font-size: 2.5em;
 	}
+
+	.glitch, .text {
+		font-size: 3em;
+	  }
 
 	/* What is ATO */
 
@@ -3198,6 +3141,6 @@ body {
 	}
 
 	.user-behavior-arms .svg {
-	width: 200px;
-}
+		width: 200px;
+	}
 }
