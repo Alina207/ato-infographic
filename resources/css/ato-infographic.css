@@ -166,7 +166,7 @@ body {
 	width: 400px;
 	margin: 0 auto;
 	background:#105065;
-  }
+}
   
   @keyframes noise-anim {
 	0% {
@@ -232,8 +232,9 @@ body {
 	100% {
 	  clip: rect(38px, 9999px, 45px, 0);
 	}
-  }
-  .glitch:after {
+	}
+	
+.glitch:after {
 	content: attr(data-text);
 	position: absolute;
 	left: 2px;
@@ -244,7 +245,7 @@ body {
 	overflow: hidden;
 	clip: rect(0, 900px, 0, 0);
 	animation: noise-anim 2s infinite linear alternate-reverse;
-  }
+}
   
   @keyframes noise-anim-2 {
 	0% {
@@ -310,8 +311,9 @@ body {
 	100% {
 	  clip: rect(7px, 9999px, 65px, 0);
 	}
-  }
-  .glitch:before {
+	}
+	
+.glitch:before {
 	content: attr(data-text);
 	position: absolute;
 	left: -2px;
@@ -322,17 +324,17 @@ body {
 	overflow: hidden;
 	clip: rect(0, 900px, 0, 0);
 	animation: noise-anim-2 3s infinite linear alternate-reverse;
-  }
-  
-  .glitch, .text {
+}
+
+.glitch, .text {
 	font-size: 100px;
 	position: relative;
-  }
-  
-  .jolting {
+}
+
+.jolting {
 	display: inline-block;
 	animation: jolting 4s linear infinite;
-  }
+}
   
   @keyframes jolting {
 	0% {
@@ -2318,27 +2320,27 @@ body {
 	}
 	}
 	
-  .glitch:before, .glitch:after {
+.glitch:before, .glitch:after {
 	content: attr(text);
 	position: absolute;
 	top: 0;
 	background: inherit;
 	overflow: hidden;
 	clip: rect(0, 900px, 0, 0);
-  }
+}
   
-  .glitch:before {
+.glitch:before {
 	left: -4.5px;
 	text-shadow: 1.8px 0 blue;
 	animation: noise-anim-2 39s infinite linear alternate-reverse;
-  }
-  
-  .glitch:after {
+}
+
+.glitch:after {
 	left: 4.5px;
 	text-shadow: -1.8px 0 red;
 	animation: noise-anim 24s infinite linear alternate-reverse;
-  }
-  
+}
+
 
 .section-intro h1 {
 	font-family: Intro, sans-serif;
@@ -2445,18 +2447,18 @@ body {
 
 .section-whatIsATO .number-container {
 	width: 100px;
-    background: transparent;
-    border: 8px solid #00a6ca;
-    border-radius: 50%;
+  background: transparent;
+  border: 8px solid #00a6ca;
+  border-radius: 50%;
 	text-align: center;
 	display: inline-block;
 	margin-top: 2%;
-    margin-right: 4%;
-  }
+  margin-right: 4%;
+}
   
 .section-whatIsATO .number {
 	font-size: 60px;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 
@@ -2466,11 +2468,12 @@ body {
 	background-color: #eeeeee;
 	padding-bottom: 2em;
 	overflow: visible;
-	min-height: 500px;
+	min-height: 665px;
+	padding-right: 0;
 }
 .ROI-text {
 	margin-top: 1.5em;
-	padding-left: 3em;
+	padding: 0em 3em;
 }
 
 .ROI-text h2 {
@@ -2493,11 +2496,37 @@ body {
 	line-height: 2;
 }
 
+.criminals-can-list ul {
+	padding-left: 0em;
+	list-style-type: none;
+}
+
+.first-arm-list {
+	position: relative;
+	bottom: 6px;
+}
+
+.second-arm-list {
+	position: relative;
+	top: 7px;
+}
+
+.third-arm-list {
+	position: relative;
+	top: 17px;
+}
+
 .progress-wrapper {
 	width: 100%;
-  }
+}
+
+.criminals-can-list {
+	position: absolute;
+	top: 65px;
+	left: 65px;
+}
   
-  .progress {
+.progress {
 	display: flex;
 	flex-direction: row-reverse;
 	box-shadow: none!important;
@@ -2506,47 +2535,51 @@ body {
 	overflow: visible;
 	position: relative;
 	background-color: transparent!important;
-  }
+}
   
-  .hand {
+.hand {
 	height: 130px;
-    width: auto;
-    position: relative;
-    top: -15px;
-  }
+  width: auto;
+  position: relative;
+	top: -17px;
+	left: 18px;
+}
 
-  .first-arm {
-	  background-color: #494949;
-		height: 29.9px;
-	}
+.first-arm {
+	background-color: #494949;
+	height: 94px;
+	border-bottom: 66px solid #eeeeee;
+}
 	
-	.first-arm.animate {
-		animation: firstArmMove 6s linear;
-		width: 50%;
-	}
+.first-arm.animate {
+	animation: firstArmMove 6s linear;
+	width: 50%;
+}
 
-  @keyframes firstArmMove {
+@keyframes firstArmMove {
 	0% {
 	  width: 100%;
 	}
 	15% {
 		width: 50%;
-	  }
-  }
-
-  .second-arm {
-		background-color:#00a6c9;
-		height: 85%;
-  }
-
-	.second-arm.animate {
-		width: 45%;
-		animation: secondArmMove 3.5s linear;
 	}
+}
 
-  @keyframes secondArmMove {
+.second-arm {
+	background-color: #00a6c9;
+	height: 123px;
+	border-bottom: 95px solid #eeeeee;
+}
+
+.second-arm.animate {
+	width: 45%;
+	animation: secondArmMove 3.5s linear;
+	
+}
+
+@keyframes secondArmMove {
 	0% {
-	  width: 100%;
+		width: 100%;
 	}
 	25% {
 		width:100%;
@@ -2554,33 +2587,34 @@ body {
 	50% {
 		width:45%;
 	}
-  }
+}
 
-  .third-arm {
-		background-color: #026685;
-		height: 27.9px;
-	}
-	
-	.third-arm.animate {
-		width: 40%;
-		animation: thirdArmMove 3s linear;
-	}
+.third-arm {
+	background-color: #026685;
+	height: 108px;
+	border-bottom: 80px solid #eeeeee;
+}
 
-  @keyframes thirdArmMove {
+.third-arm.animate {
+	width: 40%;
+	animation: thirdArmMove 3s linear;
+}
+
+@keyframes thirdArmMove {
 	0% {
 	  width: 100%;
 	}
 	50% {
 		width: 100%;
-	  }
+	}
 	85% {
 		width: 40%;
-	  }
-  }
+	}
+}
 
-  .third-hand {
+.third-hand {
 	top: -19px;
-  }
+}
 
 
 /* 4 Impact section*/
@@ -2618,17 +2652,18 @@ body {
 
 .section-mobile-fraud h2, h3 {
 	color: #fff;
+	line-height: 1.5;
+	margin-bottom: 0;
 }
 
 .section-mobile-fraud h2 {
 	font-weight: bold;
 	position: relative;
-    bottom: 1em;
+  bottom: 1em;
 }
 
-.section-mobile-fraud h3, p {
-	line-height: 1.5;
-	margin-bottom: 0;
+.section-mobile-fraud h3 {
+	font-size: 1.2em;
 }
 
 .section-mobile-fraud #phone-cta {
@@ -2662,12 +2697,10 @@ body {
 
 .bottom-phone {
 	padding: 4% 25% 0 25%;
-    width: 100%;
+  width: 100%;
 }
 
-.mobile-fraud-copy {
-	padding-right: 1em;
-}
+
 
 
 /* 6 User Behavior Patterns section */
@@ -2683,7 +2716,7 @@ body {
 
 .user-behavior-arms {
 	position: relative;
-    top: 60px;
+  top: 60px;
 }
 
 .user-behavior-arms .svg {
@@ -2692,7 +2725,7 @@ body {
 
 .user-behavior-footer {
 	background-color: #FCD800;
-    padding: .5em 3em;
+  padding: .5em 3em;
 }
 
 .device-one {
@@ -2721,11 +2754,10 @@ body {
 .section-insight-guide {
 	background-image: url(../img/sections/insight-guide/ATO-Infographic-6_1.jpg);
 	background-size: contain;
-    background-position: bottom right;
-    background-repeat: no-repeat;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 	background-color: #00A6CA;
 	min-height: 500px;
-	display: none;
 }
 
 .section-insight-guide h2 {
@@ -2744,16 +2776,16 @@ body {
 
 .insight-guide-copy button {
 	background-color: #FCD800;
-    border-color: #FCD800;
+  border-color: #FCD800;
 	color: #000000;
 	margin: 1em 0;
-    padding: 6px 50px;
-    text-transform: uppercase;
-    line-height: normal;
+  padding: 6px 50px;
+  text-transform: uppercase;
+  line-height: normal;
 	border: none;
 	webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -2819,6 +2851,24 @@ body {
 		font-size: 1em!important;
 	}
 
+	.section-ROI {
+		min-height: 610px!important;
+	}
+
+	.criminals-can-list {
+    position: absolute!important;
+    top: 65px!important;
+    left: 30px!important;
+	}
+
+	.progress-wrapper {
+		width: 100%!important;
+		margin: 18% 0!important;
+	}
+
+
+
+
 }
 
 /*//////////////// 576px ///////////////////*/
@@ -2847,7 +2897,7 @@ body {
 
 	.glitch, .text {
 		font-size: 3em;
-	  }
+	}
 
 	/* What is ATO */
 
@@ -2860,6 +2910,7 @@ body {
 		width: 50px;
 		border: 3px solid #00a6ca;
 	}
+
 	.section-whatIsATO .number {
 		font-size: 30px;
 	}
@@ -2877,7 +2928,7 @@ body {
 	/* The ROI of ATO */
 
 	.section-ROI {
-		min-height: 350px;
+		min-height: 610px;
 	}
 
 	.ROI-text h3 {
@@ -2886,7 +2937,15 @@ body {
 
 	.ROI-text {
 		margin-top: 0em;
-		padding-left: 2em;
+		padding: 0em 2em;
+	}
+
+	.progress-wrapper {
+    margin: 13% 0px;
+	}
+
+	.progress {
+		height: 60px;
 	}
 
 	/* Impact */
@@ -2990,6 +3049,7 @@ body {
 	}
 
 
+
 }
 
 @media (max-width:767px) and (min-width:569px) {
@@ -3008,6 +3068,12 @@ body {
 		text-align: center;
 		padding: .5em 1em;
 		font-size: 1.2em;
+	}
+
+	.criminals-can-list {
+		top: 30px;
+    left: 50px;
+    font-size: 1em;
 	}
 
 	
@@ -3034,6 +3100,11 @@ body {
 
 	.section-ROI {
 		padding-bottom: 4em;
+	}
+
+	.criminals-can-list {
+		font-size: .9em;
+		top: 50px;
 	}
 	
 
@@ -3126,6 +3197,21 @@ body {
 		font-size: 22px;
 	}
 
+	.section-mobile-fraud {
+		padding-top: 3%;
+	}
+
+	.criminals-can-list {
+    top: 60px;
+}
+ .progress-wrapper {
+	margin: 5% 0px;
+ }
+
+.progress {
+	height: 45px;
+}
+
 
 }
 
@@ -3143,4 +3229,13 @@ body {
 	.user-behavior-arms .svg {
 		width: 200px;
 	}
+
+	.mobile-fraud-copy {
+		padding: 0 2em 0 1.5em;
+	}
+
+	.left-phone {
+		padding-left: 2em;
+	}
+
 }
