@@ -98,6 +98,7 @@ p {
 	margin: 0!important;
 }
 
+
 ::-moz-selection {
  color: #000;
  background: #FCD800;
@@ -2681,6 +2682,7 @@ a {
 	width: 100%;
 	transform: translateY(0);
 	animation: none;
+	display: none;
 }
 
 .come-in {
@@ -2716,7 +2718,8 @@ a {
 
 .user-behavior-arms {
 	position: relative;
-  top: 60px;
+	top: 60px;
+	display: none;
 }
 
 .user-behavior-arms .svg {

@@ -138,6 +138,7 @@ window.onload = function onLoad() {
 		element: document.getElementById('mobile-fraud'),
 		entered: function () {
 			console.log("Enter mobile fraud waypoint");
+			$('.left-phone').addClass('show');
 			$('.left-phone').addClass('come-in');
 		},
 		exited: function () {
@@ -154,6 +155,7 @@ window.onload = function onLoad() {
 		element: document.getElementById('user-behavior'),
 		entered: function (direction) {
 			console.log("Enter user behavior waypoint");
+			$('.user-behavior-arms').addClass('show')
 			$('.svg').addClass('come-in');
 		},
 		exited: function (direction) {
