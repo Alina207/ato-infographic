@@ -94,6 +94,10 @@ body {
 	font-size: 16px;
 }
 
+p {
+	margin: 0!important;
+}
+
 ::-moz-selection {
  color: #000;
  background: #FCD800;
@@ -137,7 +141,7 @@ body {
 
 .section {
 	position: relative;
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 	
 }
 .section>.row {
@@ -148,6 +152,11 @@ body {
 .circle-container .circle-label, .main-eyebrow, .main-subtitle, .main-title, .secondary-title, .section .section-subtitle, .section .section-title, .stat {
 	font-family: Intro, "Trebuchet MS", Helvetica, Arial, sans-serif;
 	font-weight: 700;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
 }
 
 /* 1 Intro section*/
@@ -2436,7 +2445,7 @@ body {
 .icon-stat span {
 	display: inline-block;
 	padding-right: 6%;
-	font-size: 1.2em;
+	font-size: 27px;
 }
 
 .icon-stat p {
@@ -2467,7 +2476,7 @@ body {
 .section-ROI {
 	background-color: #eeeeee;
 	padding-bottom: 2em;
-	overflow: visible;
+	overflow: hidden;
 	min-height: 665px;
 	padding-right: 0;
 }
@@ -2551,10 +2560,7 @@ body {
 	border-bottom: 66px solid #eeeeee;
 }
 	
-.first-arm.animate {
-	animation: firstArmMove 6s linear;
-	width: 50%;
-}
+
 
 @keyframes firstArmMove {
 	0% {
@@ -2571,11 +2577,7 @@ body {
 	border-bottom: 95px solid #eeeeee;
 }
 
-.second-arm.animate {
-	width: 45%;
-	animation: secondArmMove 3.5s linear;
-	
-}
+
 
 @keyframes secondArmMove {
 	0% {
@@ -2591,14 +2593,11 @@ body {
 
 .third-arm {
 	background-color: #026685;
-	height: 108px;
-	border-bottom: 80px solid #eeeeee;
+	height: 128px;
+	border-bottom: 100px solid #eeeeee;
 }
 
-.third-arm.animate {
-	width: 40%;
-	animation: thirdArmMove 3s linear;
-}
+
 
 @keyframes thirdArmMove {
 	0% {
@@ -2682,17 +2681,17 @@ body {
 	width: 100%;
 	transform: translateY(0);
 	animation: none;
-	opacity: 0;
 }
 
 .come-in {
   transform: translateY(800px);
 	animation: come-in 0.8s ease forwards;
-	opacity: 1;
 }
 
 @keyframes come-in {
-  to { transform: translateY(0); }
+  to { 
+		transform: translateY(0);
+	 }
 }
 
 .bottom-phone {
@@ -2708,6 +2707,7 @@ body {
 .section-user-behavior {
 	background-color: #fff;
 	text-align: center;
+	overflow: visible;
 }
 
 .section-user-behavior h2 {
@@ -2725,7 +2725,11 @@ body {
 
 .user-behavior-footer {
 	background-color: #FCD800;
-  padding: .5em 3em;
+	padding: .5em 3em;
+}
+
+.section-user-behavior ul {
+	display: none;
 }
 
 .device-one {
@@ -2794,7 +2798,8 @@ body {
 .section-footer {
 	background-color: #026685;
 	color: #fff;
-	padding-bottom: 3em;
+	padding: 0 3em 3em 3em;
+
 }
 
 .section-footer  h2 {
@@ -2808,10 +2813,6 @@ body {
 
 .section-footer ol li{
 	font-size: .8em;
-}
-
-.section-footer p {
-	padding-left: 1em;
 }
 
 
@@ -2852,26 +2853,21 @@ body {
 	}
 
 	.section-ROI {
-		min-height: 610px!important;
+		min-height: 665px!important;
 	}
 
 	.criminals-can-list {
     position: absolute!important;
-    top: 65px!important;
     left: 30px!important;
 	}
 
-	.progress-wrapper {
-		width: 100%!important;
-		margin: 18% 0!important;
+	.section-footer {
+    padding: 0 2em 2em 2em;
 	}
-
-
-
 
 }
 
-/*//////////////// 576px ///////////////////*/
+/*//////////////// 578px ///////////////////*/
 
 @media (max-width:578px) {
 	h2 {
@@ -2916,11 +2912,11 @@ body {
 	}
 
 	.icon-stat span {
-		font-size: 10px;
+		font-size: .8em;
 	}
 
 	.icon-stat p {
-		font-size: .8em;
+		font-size: .9em;
 		line-height: 1.5;
 		padding-top: .5em;
 	}
@@ -2928,7 +2924,7 @@ body {
 	/* The ROI of ATO */
 
 	.section-ROI {
-		min-height: 610px;
+		min-height: 595px;
 	}
 
 	.ROI-text h3 {
@@ -2941,12 +2937,16 @@ body {
 	}
 
 	.progress-wrapper {
-    margin: 13% 0px;
+    margin: 10% 0px;
 	}
 
 	.progress {
 		height: 60px;
 	}
+
+	.criminals-can-list {
+    left: 30px;
+}
 
 	/* Impact */
 
@@ -2954,10 +2954,6 @@ body {
 		min-height: 400px;
 		background-size: cover;
 	}
-/* 
-	.section-impact h2 {
-		padding: 1em 1em 0em 1em;
-	} */
 
 	.section-impact .img-responsive {
 		padding-top: 1em;
@@ -2997,6 +2993,16 @@ body {
 		font-size: 1em;
 	}
 
+	.progress-wrapper {
+		display: none;
+	}
+
+	.criminals-can-list {
+		top: 35px;
+		padding-right: 1em;
+	}
+
+
 	/* Insight guide */
 
 	.section-insight-guide {
@@ -3013,15 +3019,29 @@ body {
 		padding: 6px 40px;
 	}
 
-	/* Methodology */
-
-	.section-footer h2 {
-		padding: 0em 1em;
+	.user-behavior-footer p {
+		font-size: .7em;
 	}
 
+	/* Methodology */
+
+
 	.section-footer p {
-		padding-left: .5em;
 		font-size: .8em;
+	}
+
+	.section-user-behavior ul {
+		text-align: left;
+    width: 100%;
+    line-height: 1.5;
+    font-weight: bold;
+		color: #00A6CA;
+		margin: 1em 0;
+		display: block!important;
+	}
+
+	.section-footer {
+    padding: 0 2em 2em 2em;
 	}
 
 }
@@ -3048,20 +3068,74 @@ body {
 		padding-left: 3em;
 	}
 
+	.first-arm.animate {
+		animation: firstArmMove 6s linear;
+		width: 20%;
+	}
 
+	@keyframes firstArmMove {
+		0% {
+			width: 100%;
+		}
+		15% {
+			width: 20%;
+		}
+	}
+
+	.second-arm.animate {
+		width: 15%;
+		animation: secondArmMove 3.5s linear;
+		
+	}
+
+	
+	@keyframes secondArmMove {
+		0% {
+			width: 100%;
+		}
+		25% {
+			width:100%;
+		}
+		50% {
+			width:15%;
+		}
+	}
+
+	.third-arm.animate {
+		width: 10%;
+		animation: thirdArmMove 3s linear;
+	}
+
+	@keyframes thirdArmMove {
+		0% {
+			width: 100%;
+		}
+		50% {
+			width: 100%;
+		}
+		85% {
+			width: 10%;
+		}
+	}
+
+	.criminals-can-list {
+		top: 45px;
+    left: 50px;
+    font-size: 1em;
+	}
 
 }
 
 @media (max-width:767px) and (min-width:569px) {
 	
 	.section-whatIsATO, .section-footer {
-		padding-left: 3em;
+		padding-left: 2em;
 		padding-right: 2em;
 	}
 	
 
 	.section-whatIsATO {
-		min-height: 350px;
+		min-height: 400px;
 	}
 
 	.icon-row p {
@@ -3071,12 +3145,24 @@ body {
 	}
 
 	.criminals-can-list {
-		top: 30px;
     left: 50px;
     font-size: 1em;
 	}
 
+	.section-user-behavior ul {
+		text-align: left;
+    margin: 0 15%;
+    width: 100%;
+    line-height: 3;
+    font-weight: bold;
+		color: #00A6CA;
+		padding-bottom: 1em;
+		display: block!important;
+	}
+
 	
+
+
 }
 	
 
@@ -3094,7 +3180,9 @@ body {
 	
 	/*What is ATO */
 
-
+	.icon-stat span {
+    font-size: 1.4em;
+}
 
 	/* the ROI of ATO */
 
@@ -3166,11 +3254,63 @@ body {
 
 	.section-user-behavior {
 		min-height: 400px;
+		overflow: visible;
 	}
 
 	.user-behavior-arms .svg {
 		width: 120px;
 	}
+
+	.first-arm.animate {
+		animation: firstArmMove 6s linear;
+		width: 30%;
+	}
+
+	@keyframes firstArmMove {
+		0% {
+			width: 100%;
+		}
+		15% {
+			width: 30%;
+		}
+	}
+
+	.second-arm.animate {
+		width: 25%;
+		animation: secondArmMove 3.5s linear;
+		
+	}
+
+	
+	@keyframes secondArmMove {
+		0% {
+			width: 100%;
+		}
+		25% {
+			width:100%;
+		}
+		50% {
+			width:25%;
+		}
+	}
+
+	.third-arm.animate {
+		width: 20%;
+		animation: thirdArmMove 3s linear;
+	}
+
+	@keyframes thirdArmMove {
+		0% {
+			width: 100%;
+		}
+		50% {
+			width: 100%;
+		}
+		85% {
+			width: 20%;
+		}
+	}
+
 
 	
 
@@ -3203,14 +3343,65 @@ body {
 
 	.criminals-can-list {
     top: 60px;
-}
- .progress-wrapper {
-	margin: 5% 0px;
- }
+	}
 
-.progress {
-	height: 45px;
-}
+ .progress-wrapper {
+		margin: 5% 0px;
+ 	}
+
+	.progress {
+		height: 45px;
+	}
+
+	.first-arm.animate {
+		animation: firstArmMove 6s linear;
+		width: 40%;
+	}
+
+	@keyframes firstArmMove {
+		0% {
+			width: 100%;
+		}
+		15% {
+			width: 40%;
+		}
+	}
+
+	.second-arm.animate {
+		width: 35%;
+		animation: secondArmMove 3.5s linear;
+		
+	}
+
+	
+	@keyframes secondArmMove {
+		0% {
+			width: 100%;
+		}
+		25% {
+			width:100%;
+		}
+		50% {
+			width:35%;
+		}
+	}
+
+	.third-arm.animate {
+		width: 30%;
+		animation: thirdArmMove 3s linear;
+	}
+
+	@keyframes thirdArmMove {
+		0% {
+			width: 100%;
+		}
+		50% {
+			width: 100%;
+		}
+		85% {
+			width: 30%;
+		}
+	}
 
 
 }
@@ -3236,6 +3427,36 @@ body {
 
 	.left-phone {
 		padding-left: 2em;
+	}
+
+	.bottom-phone {
+    display: none;
+	}
+	
+
+	.first-arm.animate {
+		animation: firstArmMove 6s linear;
+		width: 50%;
+	}
+
+	@keyframes firstArmMove {
+		0% {
+			width: 100%;
+		}
+		15% {
+			width: 50%;
+		}
+	}
+
+	.second-arm.animate {
+		width: 45%;
+		animation: secondArmMove 3.5s linear;
+		
+	}
+
+	.third-arm.animate {
+		width: 40%;
+		animation: thirdArmMove 3s linear;
 	}
 
 }
