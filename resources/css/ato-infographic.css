@@ -160,6 +160,11 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
 /* 1 Intro section*/
 
 /*cheap and clunky way to override the ipad Pro height issue */
@@ -2710,6 +2715,7 @@ a {
 	background-color: #fff;
 	text-align: center;
 	overflow: visible;
+	position: relative;
 }
 
 .section-user-behavior h2 {
@@ -2736,23 +2742,23 @@ a {
 }
 
 .device-one {
-	animation-delay: 2s;
+	animation-delay: .5s;
 }
 
 .device-two {
-	animation-delay: 3s;
+	animation-delay: 1.7s;
 }
 
 .device-three {
-	animation-delay: 4s;
+	animation-delay: 1s;
 }
 
 .device-four {
-	animation-delay: 5s;
+	animation-delay: 1.9s;
 }
 
 .device-five {
-	animation-delay: 6s;
+	animation-delay: 1.5s;
 }
 
 
@@ -2784,7 +2790,6 @@ a {
 .insight-guide-copy button {
 	background-color: #FCD800;
   border-color: #FCD800;
-	color: #000000;
 	margin: 1em 0;
   padding: 6px 50px;
   text-transform: uppercase;
@@ -2793,6 +2798,11 @@ a {
 	webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
+}
+
+.insight-guide-copy button:hover {
+	background-color: #bda200;
+  border-color: #bda200;
 }
 
 
@@ -2994,6 +3004,8 @@ a {
 	.user-behavior-footer {
 		padding: .5em 1em;
 		font-size: 1em;
+		position: absolute;
+		bottom: 0px;
 	}
 
 	.progress-wrapper {
@@ -3457,9 +3469,33 @@ a {
 		
 	}
 
+	@keyframes secondArmMove {
+		0% {
+			width: 100%;
+		}
+		25% {
+			width:100%;
+		}
+		50% {
+			width:45%;
+		}
+	}
+
 	.third-arm.animate {
 		width: 40%;
 		animation: thirdArmMove 3s linear;
+	}
+
+	@keyframes thirdArmMove {
+		0% {
+			width: 100%;
+		}
+		50% {
+			width: 100%;
+		}
+		85% {
+			width: 40%;
+		}
 	}
 
 }
